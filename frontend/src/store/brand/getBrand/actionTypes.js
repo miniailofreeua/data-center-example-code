@@ -1,0 +1,6 @@
+export const GET_BRAND = 'GET_BRAND';
+export const GET_BRAND_SUCCESS = 'GET_BRAND_SUCCESS';
+
+export const API_ERROR = 'GET_BRAND_API_ERROR';
+
+export const CLEAR_GET_BRAND_STATE = 'CLEAR_GET_BRAND_STATE';

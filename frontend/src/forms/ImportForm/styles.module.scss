@@ -1,0 +1,26 @@
+.modalContainer {
+  min-width: 52vw;
+
+  position: relative;
+
+  max-height: 80vh;
+  overflow: auto;
+
+  & > form {
+    max-width: 50vw;
+    margin: 0 auto;
+  }
+}
+.traderFields {
+  padding: 15px 5px 0 0;
+  width: fit-content;
+  cursor: pointer;
+
+  &:hover {
+    color: dodgerblue;
+  }
+}
+
+.btn {
+  min-width: 100px;
+}

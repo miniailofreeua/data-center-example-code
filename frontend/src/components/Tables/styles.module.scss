@@ -1,0 +1,61 @@
+.expandedCard {
+  margin: 0 !important;
+  .expandedCardBody {
+    padding: 0 !important;
+    .row {
+      > div {
+        > div {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.avForm {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80% !important;
+
+  align-self: flex-start;
+
+  padding: 0px !important;
+  flex-grow: 1;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  flex-grow: 1;
+  max-width: 20% !important;
+  width: fit-content !important;
+  height: 100%;
+  padding: 0px !important;
+
+  .button {
+    text-align: center;
+  }
+}
+
+.сolumnHeader {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.customFlatpicker {
+  background-color: #fff !important;
+}
+
+.aligning {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  width: 100%;
+  height: 100%;
+}

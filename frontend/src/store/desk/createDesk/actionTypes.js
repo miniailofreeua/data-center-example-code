@@ -1,0 +1,3 @@
+export const CREATE_DESK = 'CREATE_DESK';
+export const CREATE_DESK_SUCCESS = 'CREATE_DESK_SUCCESS';
+export const API_ERROR = 'LOGIN_API_ERROR';

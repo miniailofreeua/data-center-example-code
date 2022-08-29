@@ -1,0 +1,128 @@
+.test-button {
+  font-size: 20px;
+  color: gray;
+  padding: 5px;
+  margin: 20px;
+}
+
+.modals {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+}
+
+.app-modal-wrapper {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.mbsc-fr {
+  z-index: 50 !important;
+
+  &.mbsc-calendar {
+    z-index: 29 !important;
+
+    @media screen and (max-width: 700px) {
+      z-index: 9 !important;
+    }
+  }
+}
+
+#intercom-container {
+  z-index: 11 !important;
+}
+
+.app-modal-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.app-modal {
+  overflow: visible;
+  max-height: 98%;
+
+  width: auto;
+  background: #fff;
+  border-radius: 5px;
+  max-height: auto;
+  min-width: 300px;
+  z-index: 11;
+}
+
+.text {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.buttons {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-button {
+  font-size: 15px;
+  color: gray;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+}
+.modalHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-content {
+  background: rgba(193, 29, 29, 0.5);
+  color: #fff;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insta-btn-info {
+  cursor: pointer;
+  font-weight: normal;
+  color: #218bc3;
+  font-style: italic;
+
+  &:hover {
+    color: #165c82;
+    text-decoration: underline;
+    background-color: transparent;
+  }
+}
+
+.chat-box {
+  max-height: 70vh;
+  min-height: 50vh;
+  overflow-y: scroll;
+}

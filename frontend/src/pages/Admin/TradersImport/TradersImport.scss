@@ -1,0 +1,64 @@
+.traders-import {
+  padding: 20px;
+
+  .dropzone-container {
+    width: 200px;
+    height: 220px;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px -2px rgba($color: #000000, $alpha: 0.4);
+    cursor: pointer;
+
+    .dropzone-text {
+      text-align: center;
+      font-weight: 600;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .basic-table {
+    margin: 0;
+    width: auto;
+  }
+
+  .btn {
+    display: block;
+    min-width: 114px;
+  }
+
+  .corruput-traders-table {
+    thead {
+      td {
+        font-weight: bold;
+      }
+    }
+    td:first-child {
+      color: #721c24;
+      background-color: #f8d7da;
+      border-color: #f5c6cb;
+      margin-bottom: 1rem;
+      border-radius: 0.25rem;
+    }
+  }
+}
+
+.horizontalFields {
+  display: flex;
+  flex-direction: row;
+  > div {
+    width: 50%;
+  }
+}
+
+.traderFields {
+  padding: 15px 5px 0 0;
+  width: fit-content;
+  cursor: pointer;
+
+  &:hover {
+    color: dodgerblue;
+  }
+}

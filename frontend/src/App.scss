@@ -1,0 +1,138 @@
+.form-group {
+  word-break: break-word;
+  label {
+    margin-top: 8px;
+    margin-bottom: 5px;
+  }
+}
+
+.pill {
+  border-radius: 20%;
+  padding: 3px 7px;
+  &.red {
+    color: #df3232;
+    background-color: rgba(255, 103, 103, 0.25);
+  }
+  &.green {
+    color: #34c38f;
+    background-color: rgba(52, 195, 143, 0.25);
+  }
+}
+
+.inline-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  label {
+    margin-right: 8px;
+  }
+  margin-top: 5px;
+}
+
+.filters-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  padding: 0px 16px 16px 0px;
+  label {
+    margin-top: 8px;
+    margin-bottom: 5px;
+  }
+  > div {
+    flex: 0 1 200px;
+    min-width: 200px;
+    max-width: 200px;
+    width: 200px;
+    margin-right: 10px;
+
+    @media screen and (max-width: 768px) {
+      flex: auto;
+
+      &:not(:first-child) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .table-filter {
+    width: auto;
+    margin: 0 10px 0 0;
+  }
+}
+
+.breadcrumb {
+  padding: 0.75rem 0;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 0.25rem;
+}
+
+.breadcrumb::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.breadcrumb > li {
+  float: left;
+}
+
+.breadcrumb > li + li::before {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #999;
+  content: '/';
+}
+
+.breadcrumb > .active {
+  color: #555;
+}
+
+.shadow-wrapper {
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.05);
+}
+
+.bg-white {
+  background-color: #fff !important;
+  color: #555 !important;
+}
+
+.content {
+  background: transparent;
+  margin-top: 0 !important;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  @media screen and (max-width: 480px) {
+    margin-left: initial;
+  }
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  .form {
+    width: 75%;
+  }
+  .pr-form-buttons {
+    margin-top: 10px;
+  }
+  margin-bottom: 80px;
+  margin-top: 10px;
+}
+
+.error-message {
+  font-size: 11px;
+  color: #dd5826;
+  line-height: 1;
+  display: block;
+  margin-top: 5px;
+  white-space: normal;
+}
+
+.header-dropdown {
+  transform: translate3d(0px, -20px, 0px) !important;
+  padding: 0;
+}

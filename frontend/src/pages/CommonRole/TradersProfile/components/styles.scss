@@ -1,0 +1,19 @@
+.items-container {
+  gap: 20px;
+  .item {
+    min-width: 120px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .profile-credentials-container {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+
+    gap: 20px;
+  }
+  .items-container {
+    max-width: 45% !important;
+    flex-direction: column !important;
+  }
+}

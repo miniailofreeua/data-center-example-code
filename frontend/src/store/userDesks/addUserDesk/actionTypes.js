@@ -1,0 +1,4 @@
+export const ADD_USER_DESK = 'ADD_USER_DESK';
+export const ADD_USER_DESK_SUCCESS = 'ADD_USER_DESK_SUCCESS';
+
+export const API_ERROR = 'ADD_USER_DESK_API_ERROR';

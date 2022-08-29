@@ -1,0 +1,17 @@
+.horizontalFields {
+  display: flex;
+  flex-direction: row;
+  > div {
+    width: 50%;
+  }
+}
+
+.traderFields {
+  padding: 15px 5px 0 0;
+  width: fit-content;
+  cursor: pointer;
+
+  &:hover {
+    color: dodgerblue;
+  }
+}

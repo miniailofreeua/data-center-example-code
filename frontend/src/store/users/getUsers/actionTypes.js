@@ -1,0 +1,4 @@
+export const GET_USERS = 'GET_USERS';
+export const GET_USERS_SUCCESS = 'GET_USERS_SUCCESS';
+export const API_ERROR = 'LOGIN_API_ERROR';
+export const CLEAR_GET_USERS_STATE = 'CLEAR_GET_USERS_STATE';

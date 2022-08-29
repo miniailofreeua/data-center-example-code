@@ -1,0 +1,33 @@
+version: 0.2
+phases:
+  install:
+    on-failure: ABORT
+    commands:
+      # install node 14v
+      - apt update
+      - curl -sL https://deb.nodesource.com/setup_14.x | bash -
+      - apt -y install nodejs
+      - node  -v
+      # Install dependencies needed for build
+      - yarn install
+      - cd frontend && yarn install
+      - cd ..
+      # Upgrade AWS CLI to the latest version
+      - pip install --upgrade awscli
+  pre_build:
+    on-failure: ABORT
+    commands:
+      - yarn run prebuild
+  build:
+    on-failure: ABORT
+    commands:
+      - 'yarn run build:prod'
+  post_build:
+    on-failure: ABORT
+    commands:
+      - yarn run postbuild
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
+  base-directory: dist

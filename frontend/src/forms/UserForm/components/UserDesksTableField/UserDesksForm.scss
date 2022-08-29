@@ -1,0 +1,12 @@
+.desks-table-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  .table-container {
+    width: 93%;
+  }
+
+  .icon-wrapper {
+    padding: 5px 0px 0px 20px;
+  }
+}

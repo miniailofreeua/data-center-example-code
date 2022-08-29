@@ -1,0 +1,3 @@
+export const UPDATE_DESK = 'UPDATE_DESK';
+export const UPDATE_DESK_SUCCESS = 'UPDATE_DESK_SUCCESS';
+export const API_ERROR = 'UPDATE_DESK_API_ERROR';

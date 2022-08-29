@@ -1,0 +1,4 @@
+export const GET_DESKS = 'GET_DESKS';
+export const GET_DESKS_SUCCESS = 'GET_DESKS_SUCCESS';
+export const API_ERROR = 'LOGIN_API_ERROR';
+export const CLEAR_GET_DESKS_STATE = 'CLEAR_GET_DESKS_STATE';

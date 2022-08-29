@@ -1,0 +1,122 @@
+.sticky-header-class-table {
+  display: block;
+
+  height: auto;
+  max-height: calc(100vh - (60px + 46px + 30px + 260px));
+
+  overflow-y: auto;
+}
+
+.sticky-header-class-header-wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+
+  background-color: #fff;
+
+  z-index: 100;
+
+  top: 0;
+
+  display: inline-block;
+  min-width: 100%;
+}
+
+.sticky-header-class-header {
+  display: flex;
+  justify-content: space-between;
+
+  min-width: 100%;
+
+  .selection-cell-header {
+    width: 50px !important;
+    min-width: 50px !important;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  th {
+    padding: 10px 0 !important;
+
+    display: flex;
+    width: 100%;
+    min-width: 120px;
+    overflow: hidden;
+
+    justify-content: flex-start;
+  }
+}
+
+.sticky-header-class-body {
+  overflow-y: auto;
+  overflow-x: visible;
+
+  display: inline-block;
+
+  height: calc(100% - 30px);
+
+  min-width: 100%;
+  min-height: 30vh;
+
+  position: unset;
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 100%;
+
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+
+    position: unset;
+
+    .selection-cell {
+      width: 50px !important;
+      min-width: 50px !important;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .react-bs-table-no-data {
+      width: 100%;
+    }
+
+    td {
+      justify-content: flex-start;
+      max-height: 40px;
+      padding: 0;
+
+      border-right: 1px solid rgba(0, 0, 0, 0.018);
+      border-radius: 0;
+
+      &:last-child {
+        border-right: 1px solid rgba(0, 0, 0, 0);
+      }
+    }
+  }
+}
+
+.sticky-header-class-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 100%;
+
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+
+  position: unset;
+
+  td {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-width: 120px;
+
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+    border-radius: 5px;
+
+    height: 100px !important;
+  }
+}
